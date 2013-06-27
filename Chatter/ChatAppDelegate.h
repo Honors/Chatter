@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChatMasterViewController.h"
 
 @interface ChatAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property ChatMasterViewController *cmvc;
 
 @end

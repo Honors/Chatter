@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8120C69E176C0C7A005BDA17 /* ChatLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8138DF6D176C0A1E0068B866 /* ChatLoginViewController.m */; };
+		8120C6A2176C1497005BDA17 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8120C6A1176C1497005BDA17 /* Social.framework */; };
+		8138DF6B176C08F20068B866 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8138DF6A176C08F20068B866 /* Accounts.framework */; };
+		81418E47176C2F6D008E449F /* ChatContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8120C6A4176C2D75005BDA17 /* ChatContactsViewController.m */; };
+		81418E4A176C30D9008E449F /* ChatContactsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81418E49176C3026008E449F /* ChatContactsNavigationController.m */; };
+		818B79C6176901E000491104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B79C5176901E000491104 /* Foundation.framework */; };
+		818B79C8176901E000491104 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B79C7176901E000491104 /* CoreGraphics.framework */; };
+		818B79CA176901E000491104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B79C9176901E000491104 /* UIKit.framework */; };
+		818B79D0176901E000491104 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 818B79CE176901E000491104 /* InfoPlist.strings */; };
+		818B79D2176901E000491104 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 818B79D1176901E000491104 /* main.m */; };
+		818B79D6176901E000491104 /* ChatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 818B79D5176901E000491104 /* ChatAppDelegate.m */; };
+		818B79D9176901E000491104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818B79D7176901E000491104 /* Main.storyboard */; };
+		818B79DC176901E000491104 /* ChatMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818B79DB176901E000491104 /* ChatMasterViewController.m */; };
+		818B79DF176901E000491104 /* ChatMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 818B79DE176901E000491104 /* ChatMessagesViewController.m */; };
+		818B79E1176901E000491104 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 818B79E0176901E000491104 /* Images.xcassets */; };
+		818B79E8176901E000491104 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B79E7176901E000491104 /* XCTest.framework */; };
+		818B79E9176901E000491104 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B79C5176901E000491104 /* Foundation.framework */; };
+		818B79EA176901E000491104 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 818B79C9176901E000491104 /* UIKit.framework */; };
+		818B79F2176901E000491104 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 818B79F0176901E000491104 /* InfoPlist.strings */; };
+		818B79F4176901E000491104 /* ChatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 818B79F3176901E000491104 /* ChatterTests.m */; };
+		8193AE9D177B9655009F4D51 /* MessagePackPacker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE7C177B9655009F4D51 /* MessagePackPacker.m */; };
+		8193AE9E177B9655009F4D51 /* MessagePackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE7E177B9655009F4D51 /* MessagePackParser.m */; };
+		8193AE9F177B9655009F4D51 /* MessagePackParser+Streaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE80177B9655009F4D51 /* MessagePackParser+Streaming.m */; };
+		8193AEA0177B9655009F4D51 /* objectc.c in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE91177B9655009F4D51 /* objectc.c */; };
+		8193AEA1177B9655009F4D51 /* unpack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE92177B9655009F4D51 /* unpack.c */; };
+		8193AEA2177B9655009F4D51 /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE93177B9655009F4D51 /* version.c */; };
+		8193AEA3177B9655009F4D51 /* vrefbuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE94177B9655009F4D51 /* vrefbuffer.c */; };
+		8193AEA4177B9655009F4D51 /* zone.c in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE95177B9655009F4D51 /* zone.c */; };
+		8193AEA5177B9655009F4D51 /* NSArray+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE97177B9655009F4D51 /* NSArray+MessagePack.m */; };
+		8193AEA6177B9655009F4D51 /* NSData+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE99177B9655009F4D51 /* NSData+MessagePack.m */; };
+		8193AEA7177B9655009F4D51 /* NSDictionary+MessagePack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8193AE9B177B9655009F4D51 /* NSDictionary+MessagePack.m */; };
+		8193AEA8177B9655009F4D51 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 8193AE9C177B9655009F4D51 /* readme.md */; };
+		81EB9FD7176C4C71005D8258 /* ChatWrapperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81418E4C176C4B1D008E449F /* ChatWrapperViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		818B79EB176901E000491104 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 818B79BA176901E000491104 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 818B79C1176901E000491104;
+			remoteInfo = Chatter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8120C6A1176C1497005BDA17 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		8120C6A3176C2D75005BDA17 /* ChatContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatContactsViewController.h; sourceTree = "<group>"; };
+		8120C6A4176C2D75005BDA17 /* ChatContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatContactsViewController.m; sourceTree = "<group>"; };
+		8138DF6A176C08F20068B866 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		8138DF6C176C0A1E0068B866 /* ChatLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatLoginViewController.h; sourceTree = "<group>"; };
+		8138DF6D176C0A1E0068B866 /* ChatLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatLoginViewController.m; sourceTree = "<group>"; };
+		81418E48176C3026008E449F /* ChatContactsNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatContactsNavigationController.h; sourceTree = "<group>"; };
+		81418E49176C3026008E449F /* ChatContactsNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatContactsNavigationController.m; sourceTree = "<group>"; };
+		81418E4B176C4B1D008E449F /* ChatWrapperViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatWrapperViewController.h; sourceTree = "<group>"; };
+		81418E4C176C4B1D008E449F /* ChatWrapperViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatWrapperViewController.m; sourceTree = "<group>"; };
+		818B79C2176901E000491104 /* chatter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		818B79C5176901E000491104 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		818B79C7176901E000491104 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		818B79C9176901E000491104 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		818B79CD176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		818B79CF176901E000491104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		818B79D1176901E000491104 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		818B79D3176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		818B79D4176901E000491104 /* ChatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatAppDelegate.h; sourceTree = "<group>"; };
+		818B79D5176901E000491104 /* ChatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatAppDelegate.m; sourceTree = "<group>"; };
+		818B79D8176901E000491104 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		818B79DA176901E000491104 /* ChatMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatMasterViewController.h; sourceTree = "<group>"; };
+		818B79DB176901E000491104 /* ChatMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatMasterViewController.m; sourceTree = "<group>"; };
+		818B79DD176901E000491104 /* ChatMessagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatMessagesViewController.h; sourceTree = "<group>"; };
+		818B79DE176901E000491104 /* ChatMessagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatMessagesViewController.m; sourceTree = "<group>"; };
+		818B79E0176901E000491104 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		818B79E6176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		818B79E7176901E000491104 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		818B79EF176901E000491104 /* ChatterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChatterTests-Info.plist"; sourceTree = "<group>"; };
+		818B79F1176901E000491104 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		818B79F3176901E000491104 /* ChatterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatterTests.m; sourceTree = "<group>"; };
+		8193AE7A177B9655009F4D51 /* MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePack.h; sourceTree = "<group>"; };
+		8193AE7B177B9655009F4D51 /* MessagePackPacker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePackPacker.h; sourceTree = "<group>"; };
+		8193AE7C177B9655009F4D51 /* MessagePackPacker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePackPacker.m; sourceTree = "<group>"; };
+		8193AE7D177B9655009F4D51 /* MessagePackParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagePackParser.h; sourceTree = "<group>"; };
+		8193AE7E177B9655009F4D51 /* MessagePackParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagePackParser.m; sourceTree = "<group>"; };
+		8193AE7F177B9655009F4D51 /* MessagePackParser+Streaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MessagePackParser+Streaming.h"; sourceTree = "<group>"; };
+		8193AE80177B9655009F4D51 /* MessagePackParser+Streaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MessagePackParser+Streaming.m"; sourceTree = "<group>"; };
+		8193AE83177B9655009F4D51 /* object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
+		8193AE84177B9655009F4D51 /* pack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pack.h; sourceTree = "<group>"; };
+		8193AE85177B9655009F4D51 /* pack_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pack_define.h; sourceTree = "<group>"; };
+		8193AE86177B9655009F4D51 /* pack_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pack_template.h; sourceTree = "<group>"; };
+		8193AE87177B9655009F4D51 /* sbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sbuffer.h; sourceTree = "<group>"; };
+		8193AE88177B9655009F4D51 /* sysdep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysdep.h; sourceTree = "<group>"; };
+		8193AE89177B9655009F4D51 /* unpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unpack.h; sourceTree = "<group>"; };
+		8193AE8A177B9655009F4D51 /* unpack_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unpack_define.h; sourceTree = "<group>"; };
+		8193AE8B177B9655009F4D51 /* unpack_template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unpack_template.h; sourceTree = "<group>"; };
+		8193AE8C177B9655009F4D51 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		8193AE8D177B9655009F4D51 /* vrefbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vrefbuffer.h; sourceTree = "<group>"; };
+		8193AE8E177B9655009F4D51 /* zbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbuffer.h; sourceTree = "<group>"; };
+		8193AE8F177B9655009F4D51 /* zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zone.h; sourceTree = "<group>"; };
+		8193AE90177B9655009F4D51 /* msgpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgpack.h; sourceTree = "<group>"; };
+		8193AE91177B9655009F4D51 /* objectc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = objectc.c; sourceTree = "<group>"; };
+		8193AE92177B9655009F4D51 /* unpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unpack.c; sourceTree = "<group>"; };
+		8193AE93177B9655009F4D51 /* version.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = version.c; sourceTree = "<group>"; };
+		8193AE94177B9655009F4D51 /* vrefbuffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vrefbuffer.c; sourceTree = "<group>"; };
+		8193AE95177B9655009F4D51 /* zone.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zone.c; sourceTree = "<group>"; };
+		8193AE96177B9655009F4D51 /* NSArray+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MessagePack.h"; sourceTree = "<group>"; };
+		8193AE97177B9655009F4D51 /* NSArray+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MessagePack.m"; sourceTree = "<group>"; };
+		8193AE98177B9655009F4D51 /* NSData+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MessagePack.h"; sourceTree = "<group>"; };
+		8193AE99177B9655009F4D51 /* NSData+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MessagePack.m"; sourceTree = "<group>"; };
+		8193AE9A177B9655009F4D51 /* NSDictionary+MessagePack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MessagePack.h"; sourceTree = "<group>"; };
+		8193AE9B177B9655009F4D51 /* NSDictionary+MessagePack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MessagePack.m"; sourceTree = "<group>"; };
+		8193AE9C177B9655009F4D51 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		818B79BF176901E000491104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8120C6A2176C1497005BDA17 /* Social.framework in Frameworks */,
+				8138DF6B176C08F20068B866 /* Accounts.framework in Frameworks */,
+				818B79C8176901E000491104 /* CoreGraphics.framework in Frameworks */,
+				818B79CA176901E000491104 /* UIKit.framework in Frameworks */,
+				818B79C6176901E000491104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818B79E3176901E000491104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818B79E8176901E000491104 /* XCTest.framework in Frameworks */,
+				818B79EA176901E000491104 /* UIKit.framework in Frameworks */,
+				818B79E9176901E000491104 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		818B79B9176901E000491104 = {
+			isa = PBXGroup;
+			children = (
+				818B79CB176901E000491104 /* Chatter */,
+				818B79ED176901E000491104 /* ChatterTests */,
+				818B79C4176901E000491104 /* Frameworks */,
+				818B79C3176901E000491104 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		818B79C3176901E000491104 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				818B79C2176901E000491104 /* chatter.app */,
+				818B79E6176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		818B79C4176901E000491104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8120C6A1176C1497005BDA17 /* Social.framework */,
+				8138DF6A176C08F20068B866 /* Accounts.framework */,
+				818B79C5176901E000491104 /* Foundation.framework */,
+				818B79C7176901E000491104 /* CoreGraphics.framework */,
+				818B79C9176901E000491104 /* UIKit.framework */,
+				818B79E7176901E000491104 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		818B79CB176901E000491104 /* Chatter */ = {
+			isa = PBXGroup;
+			children = (
+				8193AE79177B9649009F4D51 /* MsgPack */,
+				818B79D4176901E000491104 /* ChatAppDelegate.h */,
+				818B79D5176901E000491104 /* ChatAppDelegate.m */,
+				818B79D7176901E000491104 /* Main.storyboard */,
+				81418E4B176C4B1D008E449F /* ChatWrapperViewController.h */,
+				81418E4C176C4B1D008E449F /* ChatWrapperViewController.m */,
+				81418E48176C3026008E449F /* ChatContactsNavigationController.h */,
+				81418E49176C3026008E449F /* ChatContactsNavigationController.m */,
+				8138DF6C176C0A1E0068B866 /* ChatLoginViewController.h */,
+				8138DF6D176C0A1E0068B866 /* ChatLoginViewController.m */,
+				818B79DA176901E000491104 /* ChatMasterViewController.h */,
+				818B79DB176901E000491104 /* ChatMasterViewController.m */,
+				8120C6A3176C2D75005BDA17 /* ChatContactsViewController.h */,
+				8120C6A4176C2D75005BDA17 /* ChatContactsViewController.m */,
+				818B79DD176901E000491104 /* ChatMessagesViewController.h */,
+				818B79DE176901E000491104 /* ChatMessagesViewController.m */,
+				818B79E0176901E000491104 /* Images.xcassets */,
+				818B79CC176901E000491104 /* Supporting Files */,
+			);
+			path = Chatter;
+			sourceTree = "<group>";
+		};
+		818B79CC176901E000491104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				818B79CD176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist */,
+				818B79CE176901E000491104 /* InfoPlist.strings */,
+				818B79D1176901E000491104 /* main.m */,
+				818B79D3176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		818B79ED176901E000491104 /* ChatterTests */ = {
+			isa = PBXGroup;
+			children = (
+				818B79F3176901E000491104 /* ChatterTests.m */,
+				818B79EE176901E000491104 /* Supporting Files */,
+			);
+			path = ChatterTests;
+			sourceTree = "<group>";
+		};
+		818B79EE176901E000491104 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				818B79EF176901E000491104 /* ChatterTests-Info.plist */,
+				818B79F0176901E000491104 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8193AE79177B9649009F4D51 /* MsgPack */ = {
+			isa = PBXGroup;
+			children = (
+				8193AE7A177B9655009F4D51 /* MessagePack.h */,
+				8193AE7B177B9655009F4D51 /* MessagePackPacker.h */,
+				8193AE7C177B9655009F4D51 /* MessagePackPacker.m */,
+				8193AE7D177B9655009F4D51 /* MessagePackParser.h */,
+				8193AE7E177B9655009F4D51 /* MessagePackParser.m */,
+				8193AE7F177B9655009F4D51 /* MessagePackParser+Streaming.h */,
+				8193AE80177B9655009F4D51 /* MessagePackParser+Streaming.m */,
+				8193AE81177B9655009F4D51 /* msgpack_src */,
+				8193AE96177B9655009F4D51 /* NSArray+MessagePack.h */,
+				8193AE97177B9655009F4D51 /* NSArray+MessagePack.m */,
+				8193AE98177B9655009F4D51 /* NSData+MessagePack.h */,
+				8193AE99177B9655009F4D51 /* NSData+MessagePack.m */,
+				8193AE9A177B9655009F4D51 /* NSDictionary+MessagePack.h */,
+				8193AE9B177B9655009F4D51 /* NSDictionary+MessagePack.m */,
+				8193AE9C177B9655009F4D51 /* readme.md */,
+			);
+			name = MsgPack;
+			sourceTree = "<group>";
+		};
+		8193AE81177B9655009F4D51 /* msgpack_src */ = {
+			isa = PBXGroup;
+			children = (
+				8193AE82177B9655009F4D51 /* msgpack */,
+				8193AE90177B9655009F4D51 /* msgpack.h */,
+				8193AE91177B9655009F4D51 /* objectc.c */,
+				8193AE92177B9655009F4D51 /* unpack.c */,
+				8193AE93177B9655009F4D51 /* version.c */,
+				8193AE94177B9655009F4D51 /* vrefbuffer.c */,
+				8193AE95177B9655009F4D51 /* zone.c */,
+			);
+			path = msgpack_src;
+			sourceTree = "<group>";
+		};
+		8193AE82177B9655009F4D51 /* msgpack */ = {
+			isa = PBXGroup;
+			children = (
+				8193AE83177B9655009F4D51 /* object.h */,
+				8193AE84177B9655009F4D51 /* pack.h */,
+				8193AE85177B9655009F4D51 /* pack_define.h */,
+				8193AE86177B9655009F4D51 /* pack_template.h */,
+				8193AE87177B9655009F4D51 /* sbuffer.h */,
+				8193AE88177B9655009F4D51 /* sysdep.h */,
+				8193AE89177B9655009F4D51 /* unpack.h */,
+				8193AE8A177B9655009F4D51 /* unpack_define.h */,
+				8193AE8B177B9655009F4D51 /* unpack_template.h */,
+				8193AE8C177B9655009F4D51 /* version.h */,
+				8193AE8D177B9655009F4D51 /* vrefbuffer.h */,
+				8193AE8E177B9655009F4D51 /* zbuffer.h */,
+				8193AE8F177B9655009F4D51 /* zone.h */,
+			);
+			path = msgpack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		818B79C1176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818B79F7176901E000491104 /* Build configuration list for PBXNativeTarget "chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */;
+			buildPhases = (
+				818B79BE176901E000491104 /* Sources */,
+				818B79BF176901E000491104 /* Frameworks */,
+				818B79C0176901E000491104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename;
+			productName = Chatter;
+			productReference = 818B79C2176901E000491104 /* chatter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		818B79E5176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 818B79FA176901E000491104 /* Build configuration list for PBXNativeTarget "chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */;
+			buildPhases = (
+				818B79E2176901E000491104 /* Sources */,
+				818B79E3176901E000491104 /* Frameworks */,
+				818B79E4176901E000491104 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				818B79EC176901E000491104 /* PBXTargetDependency */,
+			);
+			name = chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
+			productName = ChatterTests;
+			productReference = 818B79E6176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		818B79BA176901E000491104 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Chat;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = mattneary;
+				TargetAttributes = {
+					818B79E5176901E000491104 = {
+						TestTargetID = 818B79C1176901E000491104;
+					};
+				};
+			};
+			buildConfigurationList = 818B79BD176901E000491104 /* Build configuration list for PBXProject "chatter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 818B79B9176901E000491104;
+			productRefGroup = 818B79C3176901E000491104 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				818B79C1176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename */,
+				818B79E5176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		818B79C0176901E000491104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818B79E1176901E000491104 /* Images.xcassets in Resources */,
+				818B79D0176901E000491104 /* InfoPlist.strings in Resources */,
+				8193AEA8177B9655009F4D51 /* readme.md in Resources */,
+				818B79D9176901E000491104 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818B79E4176901E000491104 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818B79F2176901E000491104 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		818B79BE176901E000491104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8193AEA5177B9655009F4D51 /* NSArray+MessagePack.m in Sources */,
+				8193AE9D177B9655009F4D51 /* MessagePackPacker.m in Sources */,
+				81EB9FD7176C4C71005D8258 /* ChatWrapperViewController.m in Sources */,
+				81418E4A176C30D9008E449F /* ChatContactsNavigationController.m in Sources */,
+				8193AEA4177B9655009F4D51 /* zone.c in Sources */,
+				81418E47176C2F6D008E449F /* ChatContactsViewController.m in Sources */,
+				8193AEA3177B9655009F4D51 /* vrefbuffer.c in Sources */,
+				8193AEA2177B9655009F4D51 /* version.c in Sources */,
+				8193AEA0177B9655009F4D51 /* objectc.c in Sources */,
+				8193AE9F177B9655009F4D51 /* MessagePackParser+Streaming.m in Sources */,
+				8120C69E176C0C7A005BDA17 /* ChatLoginViewController.m in Sources */,
+				8193AEA1177B9655009F4D51 /* unpack.c in Sources */,
+				818B79D6176901E000491104 /* ChatAppDelegate.m in Sources */,
+				818B79DC176901E000491104 /* ChatMasterViewController.m in Sources */,
+				818B79D2176901E000491104 /* main.m in Sources */,
+				818B79DF176901E000491104 /* ChatMessagesViewController.m in Sources */,
+				8193AE9E177B9655009F4D51 /* MessagePackParser.m in Sources */,
+				8193AEA7177B9655009F4D51 /* NSDictionary+MessagePack.m in Sources */,
+				8193AEA6177B9655009F4D51 /* NSData+MessagePack.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		818B79E2176901E000491104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				818B79F4176901E000491104 /* ChatterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		818B79EC176901E000491104 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 818B79C1176901E000491104 /* chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename */;
+			targetProxy = 818B79EB176901E000491104 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		818B79CE176901E000491104 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				818B79CF176901E000491104 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		818B79D7176901E000491104 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				818B79D8176901E000491104 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		818B79F0176901E000491104 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				818B79F1176901E000491104 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		818B79F5176901E000491104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		818B79F6176901E000491104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		818B79F8176901E000491104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matt Neary (F6YNG2Y9H2)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chatter/chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Chatter/chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = chatter;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		818B79F9176901E000491104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matt Neary (F6YNG2Y9H2)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chatter/chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "Chatter/chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = chatter;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		818B79FB176901E000491104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chatter.app/Chatter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chatter/Chatter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ChatterTests/ChatterTests-Info.plist";
+				PRODUCT_NAME = chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		818B79FC176901E000491104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Chatter.app/Chatter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Chatter/Chatter-Prefix.pch";
+				INFOPLIST_FILE = "ChatterTests/ChatterTests-Info.plist";
+				PRODUCT_NAME = chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		818B79BD176901E000491104 /* Build configuration list for PBXProject "chatter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818B79F5176901E000491104 /* Debug */,
+				818B79F6176901E000491104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		818B79F7176901E000491104 /* Build configuration list for PBXNativeTarget "chatter.temp_caseinsensitive_rename.temp_caseinsensitive_rename" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818B79F8176901E000491104 /* Debug */,
+				818B79F9176901E000491104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		818B79FA176901E000491104 /* Build configuration list for PBXNativeTarget "chatter.temp_caseinsensitive_rename.temp_caseinsensitive_renameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				818B79FB176901E000491104 /* Debug */,
+				818B79FC176901E000491104 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 818B79BA176901E000491104 /* Project object */;
+}

@@ -7,15 +7,42 @@
 //
 
 #import "ChatAppDelegate.h"
+#import "MessagePack.h"
 
 @implementation ChatAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:
+     (UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    NSLog(@"allowed: %u", [[UIApplication sharedApplication] enabledRemoteNotificationTypes]);
     return YES;
 }
-							
+
+- (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken
+{
+	NSLog(@"My token is: %@", deviceToken);
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
+{
+	NSLog(@"Failed to get token, error: %@", error);
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    self.cmvc = ((UINavigationController *)self.window.rootViewController).viewControllers[0];
+    [self.cmvc.threads[[[userInfo objectForKey:@"customParam"] objectForKey:@"from"]] addObject:@{
+         @"author": [[userInfo objectForKey:@"customParam"] objectForKey:@"from"],
+         @"payload": [[userInfo objectForKey:@"aps"] objectForKey:@"alert"]}];
+    
+    NSData *packed = [self.cmvc.threads[[[userInfo objectForKey:@"customParam"] objectForKey:@"from"]] messagePack];
+    
+    // TODO: write thread to file
+    
+    [self.cmvc refresh: [[userInfo objectForKey:@"customParam"] objectForKey:@"from"]];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
